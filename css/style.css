@@ -1,0 +1,11 @@
+#column {
+    display: grid;
+    grid-template-columns: repeat(5, 0.1fr);
+    
+}
+.tiles {
+    border: 15px solid blue;
+    padding: 15px;
+    background-color: blue;
+}
+
