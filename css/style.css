@@ -14,3 +14,9 @@ td {
 h1 {
     text-align: center;
 }
+#test1 {
+    color: black;
+}
+#test1:hover {
+    color: goldenrod;
+}
