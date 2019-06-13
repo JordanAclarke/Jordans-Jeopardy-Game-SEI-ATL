@@ -3,12 +3,12 @@ table {
     justify-content: center;
     text-align: center;
     background-color: white;
-    margin: 0 auto;
-    border: 5px solid blue;
+    border: 15px solid transparent;
 }
 
 td {
     background-color: blue;
+    padding: 30px;
 }
 
 h1 {
