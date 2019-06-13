@@ -1,0 +1,17 @@
+.game-board{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 10px;
+  background-color: black;
+  padding: 10px;
+}
+
+.square {
+    background-color: blue;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  h1 {
+      text-align: center;
+  }
