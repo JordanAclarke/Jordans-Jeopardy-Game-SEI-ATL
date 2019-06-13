@@ -12,6 +12,7 @@ for (let i = 0; i < 5; i++) {
     btn.dataset.column = i
     btn.dataset.row = "one"
     btn.classList.add = i;
+    btn.setAttribute("id", i)
     gameBoard.appendChild(btn);
     btn.appendChild(document.createTextNode('$100'))
 }
@@ -219,13 +220,11 @@ $(document).ready(function () {
     $('.square').on('click', function (evt) {
         console.log(questions[this.dataset.row][this.dataset.column])
         // console.log(document.getElementById('results').dataset)
-
+        let questionTileInfo = evt.target.id;
+        event.target.innerHtml = questions[questionTileInfo]
 
     });
 
-    $('.square').on('click', function (evt) {
-        let questionTileInfo;
-        evt.target.innerHtml = questions[questionTileInfo]
+  
+       
     })
-
-})
