@@ -1,11 +1,16 @@
-#column {
-    display: grid;
-    grid-template-columns: repeat(5, 0.1fr);
-    
+table {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    margin: 0 auto;
+    border: 5px solid blue;
 }
-.tiles {
-    border: 15px solid blue;
-    padding: 15px;
+
+td {
     background-color: blue;
 }
 
+h1 {
+    text-align: center;
+}
