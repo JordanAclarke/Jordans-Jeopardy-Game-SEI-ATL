@@ -11,6 +11,7 @@ for (let i = 0; i < 5; i++) {
     btn.classList.add('square');
     btn.dataset.column = i
     btn.dataset.row = "one"
+    btn.classList.add = i;
     gameBoard.appendChild(btn);
     btn.appendChild(document.createTextNode('$100'))
 }
@@ -221,5 +222,10 @@ $(document).ready(function () {
 
 
     });
+
+    $('.square').on('click', function (evt) {
+        let questionTileInfo;
+        evt.target.innerHtml = questions[questionTileInfo]
+    })
 
 })
