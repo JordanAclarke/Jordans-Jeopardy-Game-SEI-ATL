@@ -14,6 +14,6 @@ Once players come to the site, they can enter team names.
 
 
 ## Wireframe
-
+Startup: ![homepage](https://i.postimg.cc/L4jQK7mW/Start-Up-Home-Page.png)
 
 ## Future Development
