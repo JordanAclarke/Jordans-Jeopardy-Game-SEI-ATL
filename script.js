@@ -1,5 +1,5 @@
 let gameBoard = document.querySelector('.game-board');
-const titlesArray = ["Sports", "World", "Technology", "Movies", "U.S. History"]
+const titlesArray = ["Sports", "World", "Technology", "Media", "U.S. History"]
 for (let i = 0; i < 5; i++) {
     let columns = document.createElement('h2');
     columns.classList.add('categories');
@@ -76,15 +76,14 @@ var question1 = [
         answer: "b"
     },
     {
-        prompt: "Question3\n(a) AnswerE\n\
-            (b) purple\n(c) orange",
-        answer: "B"
+        prompt: "When was America discovered\n(a) 1500\n\
+            (b) 1492\n(c) 1990",
+        answer: "b"
     }
 ]
 var question2 = [
     two = {
-        prompt: "In basketball,what is the term used when a player reaches double digits in three of five statististical categories?\n(a) Double Double\n\
-        (b) Triple Double\n(c) Triple Jump",
+        prompt: "In basketball,what is the term used when a player reaches double digits in three of five statististical categories?\n(a) Double Double\n\ (b) Triple Double\n(c) Triple Jump",
         answer: "b"
     },
     {
@@ -100,9 +99,8 @@ var question2 = [
         answer: "a"
     },
     {
-        prompt: "Question3\n(a) AnswerE\n\
-        (b) purple\n(c) orange",
-        answer: "B"
+        prompt: "What year was America recognized as a country?\n(a) 1850\n\ (b) 2013\n(c) 1777",
+        answer: "c"
     },
 ]
 var question3 = [
@@ -123,9 +121,8 @@ var question3 = [
         answer: "b"
     },
     {
-        prompt: "Question3\n(a) AnswerE\n\
-        (b) purple\n(c) orange",
-        answer: "b"
+        prompt: "Which country recognized America as a country?\n(a) morocco\n\(b) algeria\n(c) denmark",
+        answer: "a"
     },
 ]
 var question4 = [
@@ -146,9 +143,9 @@ var question4 = [
         answer: "a"
     },
     {
-        prompt: "Question3\n(a) AnswerE\n\
-        (b) purple\n(c) orange",
-        answer: "B"
+        prompt: "What year the U.S. Stock Market faced the Black Monday?\n(a) 1872\n\
+        (b) 1987\n(c) 1920",
+        answer: "b"
     },
 ]
 var question5 = [
@@ -170,9 +167,8 @@ var question5 = [
         answer: "c"
     },
     {
-        prompt: "Question3\n(a) AnswerE\n\
-            (b) purple\n(c) orange",
-        answer: "B"
+        prompt: "In what year did English become the official language of America?\n(a) 1795\n\(b) 1801\n(c) 1605",
+        answer: "a"
     },
 ]
 
