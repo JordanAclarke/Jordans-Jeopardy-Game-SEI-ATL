@@ -56,29 +56,37 @@ for (let i = 0; i < 5; i++) {
     gameBoard.appendChild(btn4);
     btn4.appendChild(document.createTextNode('$500'))
 }
+let scorePoints = document.querySelector('#score-board')
+scorePoints = 0;
+
 
 var question1 = [
     one = {
         prompt: "In baseball and softball what do the initials RBI stand for?\n(a) Home-Run\n\(b) Run Batted In\n(c) Free Throw",
-        answer: "b"
+        answer: "b",
+        scorePoints: 100,
     },
     {
         prompt: "What is the tallest building in the world?\n(a) Your apartment complex\n\(b) the buju khalifa\n(c) World trade center",
-        answer: "b"
+        answer: "b",
+        scorePoints: 200,
     },
     {
         prompt: "On the popular social website Reddit, what does AMA stand for?\n(a) Ask me Alot\n\(b) Ask Me Anything\n(c) American Music Awards",
-        answer: "b"
+        answer: "b",
+        scorePoints: 300,
     },
     {
         prompt: "In which year were the Academy Awards, or Oscars, first presented?\n(a) 2019\n\
             (b) 1929\n(c) 1964",
-        answer: "b"
+        answer: "b",
+        scorePoints: 400,
     },
     {
         prompt: "When was America discovered\n(a) 1500\n\
             (b) 1492\n(c) 1990",
-        answer: "b"
+        answer: "b",
+        scorePoints: 500,
     }
 ]
 var question2 = [
