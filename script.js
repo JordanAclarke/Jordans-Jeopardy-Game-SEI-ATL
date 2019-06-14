@@ -56,8 +56,8 @@ for (let i = 0; i < 5; i++) {
     gameBoard.appendChild(btn4);
     btn4.appendChild(document.createTextNode('$500'))
 }
-let scorePoints = document.querySelector('#score-board')
-scorePoints = 0;
+let score = document.querySelector('#score-board')
+
 
 
 var question1 = [
@@ -189,9 +189,9 @@ row1.on('click', function (evt) {
     alert(prompt);
     var response = window.prompt(question1[tile].prompt);
     if (response === question1[tile].answer) {
-        alert('correct')
+        alert('Correct,Good Job')
     } else {
-        alert('wrong')
+        alert('Wrong!')
     } return;
 })
 
@@ -204,9 +204,9 @@ row2.on('click', function (evt) {
     alert(prompt);
     var response = window.prompt(question2[tile].prompt);
     if (response === question2[tile].answer) {
-        alert('correct')
+        alert('Correct, You are on a Roll')
     } else {
-        alert('wrong')
+        alert('Wrong')
     } return;
 })
 
@@ -220,7 +220,7 @@ row3.on('click', function (evt) {
     alert(prompt);
     var response = window.prompt(question3[tile].prompt);
     if (response === question3[tile].answer) {
-        alert('correct')
+        alert('Correct!')
     } else {
         alert('wrong')
     } return;
@@ -235,9 +235,9 @@ row4.on('click', function (evt) {
     alert(prompt);
     var response = window.prompt(question3[tile].prompt);
     if (response === question3[tile].answer) {
-        alert('correct')
+        alert('Correct!')
     } else {
-        alert('wrong')
+        alert('Wrong!')
     } return;
 })
 
@@ -251,9 +251,9 @@ row5.on('click', function (evt) {
     alert(prompt);
     var response = window.prompt(question4[tile].prompt);
     if (response === question4[tile].answer) {
-        alert('correct')
+        alert('Correct!')
     } else {
-        alert('wrong')
+        alert('Wrong!')
     } return;
 })
 // })
