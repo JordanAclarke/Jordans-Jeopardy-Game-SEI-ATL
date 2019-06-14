@@ -1,7 +1,7 @@
 .game-board{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    grid-gap: 10px;
+    grid-gap: 14px;
     background-color: black;
     padding: 10px;
   }
@@ -22,26 +22,32 @@
 
     h1 {
         text-align: center;
+        color: gold;
     }
   .categories {
       font-size: 25px;
       font-family: Georgia, 'Times New Roman', Times, serif;
       color:gold;
+      text-align: center;
+      margin: 0 auto;
       
   }
   
   body {
-      /* background-color: aqua; */
+      /* background-image: url("./giphy.gif"); */
   }
   #score-board {
       text-align: right;
+      /* color: gold; */
+  
   }
 
   #score-board {
     font-weight: bold;
     display: flex;
     justify-content: space-around;
-    font-size: 35px;
+    font-size: 28px;
+    font-family: cursive;
   }
   
   

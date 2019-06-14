@@ -202,7 +202,6 @@ for(i = 0; i < row1.length; i++) {
     let wordsVar = "Score:";
     scoreItem.innerHTML= wordsVar + score;
     console.log(score);
-   
     return;
 }
 })
