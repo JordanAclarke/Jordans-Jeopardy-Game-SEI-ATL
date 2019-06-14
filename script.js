@@ -215,7 +215,14 @@ row2.on('click', function (evt) {
         alert('Correct, You are on a Roll')
     } else {
         alert('Wrong')
-    } return;
+    } if(response === question1[tile].answer) {
+        score += 200;
+    } else {
+        score -= 200;
+    }
+    scoreItem.innerHTML= score;
+      console.log(score);
+    return;
 })
 
 
@@ -231,7 +238,14 @@ row3.on('click', function (evt) {
         alert('Correct!')
     } else {
         alert('wrong')
-    } return;
+    } if(response === question1[tile].answer) {
+        score += 300;
+    } else {
+        score -= 300;
+    }
+    scoreItem.innerHTML= score;
+    console.log(score);
+    return;
 })
 
 var row4 = $('.square3');
@@ -246,7 +260,14 @@ row4.on('click', function (evt) {
         alert('Correct!')
     } else {
         alert('Wrong!')
-    } return;
+    } if(response === question1[tile].answer) {
+        score += 400;
+    } else {
+        score -= 400;
+    }
+    scoreItem.innerHTML= score;
+    console.log(score);
+    return;
 })
 
 
@@ -262,7 +283,14 @@ row5.on('click', function (evt) {
         alert('Correct!')
     } else {
         alert('Wrong!')
-    } return;
+    } if(response === question1[tile].answer) {
+        score += 500;
+    } else {
+        score -= 500;
+    }
+    scoreItem.innerHTML= score;
+    console.log(score);
+    return;
 })
 
 // })
