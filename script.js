@@ -156,7 +156,7 @@ var question4 = [
 ]
 var question5 = [
     four = {
-        prompt: "What “King” of golf lent his name to a mixture of iced tea and lemonade?\n(a) Tiger Woods\n\(b) Arnold Palmer\n(c) Arnold Palmer",
+        prompt: "What “King” of golf lent his name to a mixture of iced tea and lemonade?\n(a) Tiger Woods\n\(b) Micheal Jordan\n(c) Arnold Palmer",
         answer: "c"
     },
     {
