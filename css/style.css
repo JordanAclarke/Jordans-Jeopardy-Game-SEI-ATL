@@ -36,5 +36,12 @@
   #score-board {
       text-align: right;
   }
+
+  #score-board {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    font-size: 35px;
+  }
   
   

@@ -198,7 +198,8 @@ row1.on('click', function (evt) {
     } else {
         score -= 100;
     }
-    scoreItem.innerHTML= score;
+    let wordsVar = "Score:";
+    scoreItem.innerHTML= wordsVar + score;
     console.log(score);
     return;
 })
