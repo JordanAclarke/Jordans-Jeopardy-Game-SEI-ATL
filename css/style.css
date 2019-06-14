@@ -1,23 +1,39 @@
-
-table {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: white;
-    border: 15px solid transparent;
-}
-
-td {
-    background-color: blue;
-    padding: 30px;
-}
-
-h1 {
-    text-align: center;
-}
-#test1 {
-    color: black;
-}
-#test1:hover {
-    color: goldenrod;
-}
+.game-board{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10px;
+    background-color: black;
+    padding: 10px;
+  }
+  
+  .square{
+      background-color: blue;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+    .square:hover {
+      background-color: blue;
+      color: gold;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+    h1 {
+        text-align: center;
+    }
+  .categories {
+      font-size: 25px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color:gold;
+      
+  }
+  
+  body {
+      /* background-color: aqua; */
+  }
+  #score-board {
+      text-align: right;
+  }
+  
+  

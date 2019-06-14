@@ -6,7 +6,7 @@
   padding: 10px;
 }
 
-.square {
+.square, .square1, .square2, .square3, .square4{
     background-color: blue;
     text-align: center;
     padding: 20px 0;
@@ -22,7 +22,7 @@
   h1 {
       text-align: center;
   }
-.columns {
+.categories {
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color:gold;
@@ -32,3 +32,10 @@
 body {
     /* background-color: aqua; */
 }
+#score-board {
+    text-align: right;
+}
+
+
+    
+   
