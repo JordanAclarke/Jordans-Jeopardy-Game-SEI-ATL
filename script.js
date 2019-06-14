@@ -56,8 +56,6 @@ for (let i = 0; i < 5; i++) {
     gameBoard.appendChild(btn4);
     btn4.appendChild(document.createTextNode('$500'))
 }
-let score = document.querySelector('#score-board')
-
 
 
 var question1 = [
@@ -180,6 +178,9 @@ var question5 = [
     },
 ]
 
+let score = 0
+let scoreItem = document.querySelector('#score-board')
+
 var row1 = $('.square');
 
 row1.on('click', function (evt) {
@@ -192,7 +193,14 @@ row1.on('click', function (evt) {
         alert('Correct,Good Job')
     } else {
         alert('Wrong!')
-    } return;
+    } if(response === question1[tile].answer) {
+        score += 100;
+    } else {
+        score -= 100;
+    }
+    scoreItem.innerHTML= score;
+    console.log(score);
+    return;
 })
 
 var row2 = $('.square1');
@@ -256,6 +264,7 @@ row5.on('click', function (evt) {
         alert('Wrong!')
     } return;
 })
+
 // })
 
 
