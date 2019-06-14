@@ -71,9 +71,9 @@ var question1 = [
         answer: "b"
     },
     {
-        prompt: "Question3\n(a) AnswerD\n\
-            (b) purple\n(c) orange",
-        answer: "a"
+        prompt: "In which year were the Academy Awards, or Oscars, first presented?\n(a) 2019\n\
+            (b) 1929\n(c) 1964",
+        answer: "b"
     },
     {
         prompt: "Question3\n(a) AnswerE\n\
@@ -96,8 +96,7 @@ var question2 = [
         answer: "a"
     },
     {
-        prompt: "Question3\n(a) AnswerD\n\
-        (b) purple\n(c) orange",
+        prompt: "Every episode of Seinfeld contains an image or reference to what superhero?\n(a) Superman\n\(b) Batman\n(c) Spiderman",
         answer: "a"
     },
     {
@@ -120,14 +119,13 @@ var question3 = [
         answer: "a"
     },
     {
-        prompt: "Question3\n(a) AnswerD\n\
-        (b) purple\n(c) orange",
-        answer: "a"
+        prompt: "Spider-Man(2002) tells the story of Peter Parker, a reserved and somewhat awkward teenager who gets bitten by an unusual spider. The spider bite gives Peter an array of new talents, including perfect vision, enhanced strength and agility and the ability to cast webs from his wrists. Name the actor who portrays Peter Parker in this movie.\n(a) Lebron James\n\(b) Tobey Maguire\n(c) Lukas Hass",
+        answer: "b"
     },
     {
         prompt: "Question3\n(a) AnswerE\n\
         (b) purple\n(c) orange",
-        answer: "B"
+        answer: "b"
     },
 ]
 var question4 = [
@@ -144,8 +142,7 @@ var question4 = [
         answer: "c"
     },
     {
-        prompt: "Question3\n(a) AnswerD\n\
-        (b) purple\n(c) orange",
+        prompt: " In which 2000 action movie did Tom Cruise play Ethan Hunt?\n(a) Mission: Impossible\n\(b) The Dark Knight\n(c) The Matrix",
         answer: "a"
     },
     {
@@ -168,8 +165,8 @@ var question5 = [
         answer: "c"
     },
     {
-        prompt: "Regarding data storage, what does the acronym SSD stand for?\n(a) solid safe drive\n\
-            (b) solid steak drive\n(c) solid state drive",
+        prompt: "Who was the youngest person to host Saturday Night Live?\n(a) Miley Cyrus\n\
+            (b) John Legend\n(c) Drew Barrymore",
         answer: "c"
     },
     {
