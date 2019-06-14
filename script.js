@@ -219,12 +219,13 @@ row2.on('click', function (evt) {
         alert('Correct, You are on a Roll')
     } else {
         alert('Wrong')
-    } if(response === question1[tile].answer) {
+    } if(response === question2[tile].answer) {
         score += 200;
     } else {
         score -= 200;
     }
-    scoreItem.innerHTML= score;
+    let wordsVar = "Score:";
+    scoreItem.innerHTML= wordsVar + score;
       console.log(score);
     return;
 })
@@ -242,12 +243,13 @@ row3.on('click', function (evt) {
         alert('Correct!')
     } else {
         alert('wrong')
-    } if(response === question1[tile].answer) {
+    } if(response === question3[tile].answer) {
         score += 300;
     } else {
         score -= 300;
     }
-    scoreItem.innerHTML= score;
+    let wordsVar = "Score:";
+    scoreItem.innerHTML= wordsVar + score;
     console.log(score);
     return;
 })
@@ -259,17 +261,18 @@ row4.on('click', function (evt) {
     console.log(evt.target)
     var prompt = question4[tile].prompt;
     alert(prompt);
-    var response = window.prompt(question3[tile].prompt);
-    if (response === question3[tile].answer) {
+    var response = window.prompt(question4[tile].prompt);
+    if (response === question4[tile].answer) {
         alert('Correct!')
     } else {
         alert('Wrong!')
-    } if(response === question1[tile].answer) {
+    } if(response === question4[tile].answer) {
         score += 400;
     } else {
         score -= 400;
     }
-    scoreItem.innerHTML= score;
+    let wordsVar = "Score:";
+    scoreItem.innerHTML= wordsVar + score;
     console.log(score);
     return;
 })
@@ -282,17 +285,18 @@ row5.on('click', function (evt) {
     console.log(evt.target)
     var prompt = question5[tile].prompt;
     alert(prompt);
-    var response = window.prompt(question4[tile].prompt);
-    if (response === question4[tile].answer) {
+    var response = window.prompt(question5[tile].prompt);
+    if (response === question5[tile].answer) {
         alert('Correct!')
     } else {
         alert('Wrong!')
-    } if(response === question1[tile].answer) {
+    } if(response === question5[tile].answer) {
         score += 500;
     } else {
         score -= 500;
     }
-    scoreItem.innerHTML= score;
+    let wordsVar = "Score:";
+    scoreItem.innerHTML= wordsVar + score;
     console.log(score);
     return;
 })
