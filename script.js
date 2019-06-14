@@ -184,26 +184,26 @@ let scoreItem = document.querySelector('#score-board')
 var row1 = $('.square');
 
 row1.on('click', function (evt) {
-for(i = 0; i < row1.length; i++) {
-    var tile = evt.target.id;
-    console.log(evt.target)
-    var prompt = question1[tile].prompt;
-    alert(prompt);
-    var response = window.prompt(question1[tile].prompt);
-    if (response === question1[tile].answer) {
-        alert('Correct,Good Job')
-    } else {
-        alert('Wrong!')
-    } if(response === question1[tile].answer) {
-        score += 100;
-    } else {
-        score -= 100;
+    for (i = 0; i < row1.length; i++) {
+        var tile = evt.target.id;
+        console.log(evt.target)
+        var prompt = question1[tile].prompt;
+        alert(prompt);
+        var response = window.prompt(question1[tile].prompt);
+        if (response === question1[tile].answer) {
+            alert('Correct,Good Job')
+        } else {
+            alert('Wrong!')
+        } if (response === question1[tile].answer) {
+            score += 100;
+        } else {
+            score -= 100;
+        }
+        let wordsVar = "Score:";
+        scoreItem.innerHTML = wordsVar + score;
+        console.log(score);
+        return;
     }
-    let wordsVar = "Score:";
-    scoreItem.innerHTML= wordsVar + score;
-    console.log(score);
-    return;
-}
 })
 
 var row2 = $('.square1');
@@ -218,14 +218,14 @@ row2.on('click', function (evt) {
         alert('Correct, You are on a Roll')
     } else {
         alert('Wrong')
-    } if(response === question2[tile].answer) {
+    } if (response === question2[tile].answer) {
         score += 200;
     } else {
         score -= 200;
     }
     let wordsVar = "Score:";
-    scoreItem.innerHTML= wordsVar + score;
-      console.log(score);
+    scoreItem.innerHTML = wordsVar + score;
+    console.log(score);
     return;
 })
 
@@ -242,13 +242,13 @@ row3.on('click', function (evt) {
         alert('Correct!')
     } else {
         alert('wrong')
-    } if(response === question3[tile].answer) {
+    } if (response === question3[tile].answer) {
         score += 300;
     } else {
         score -= 300;
     }
     let wordsVar = "Score:";
-    scoreItem.innerHTML= wordsVar + score;
+    scoreItem.innerHTML = wordsVar + score;
     console.log(score);
     return;
 })
@@ -265,13 +265,13 @@ row4.on('click', function (evt) {
         alert('Correct!')
     } else {
         alert('Wrong!')
-    } if(response === question4[tile].answer) {
+    } if (response === question4[tile].answer) {
         score += 400;
     } else {
         score -= 400;
     }
     let wordsVar = "Score:";
-    scoreItem.innerHTML= wordsVar + score;
+    scoreItem.innerHTML = wordsVar + score;
     console.log(score);
     return;
 })
@@ -289,16 +289,30 @@ row5.on('click', function (evt) {
         alert('Correct!')
     } else {
         alert('Wrong!')
-    } if(response === question5[tile].answer) {
+    } if (response === question5[tile].answer) {
         score += 500;
+        document.querySelector('.button').style.color = "blue";
     } else {
         score -= 500;
+        document.querySelector('.button').style.color = "blue";
     }
     let wordsVar = "Score:";
-    scoreItem.innerHTML= wordsVar + score;
+    scoreItem.innerHTML = wordsVar + score;
     console.log(score);
     return;
 })
+
+// if(score === 7200 ) {
+//     alert("you're an all time great!")
+// } else if (score === 4000) {
+//     alert("You win")
+// } else if(score < 3999) {
+//     alert("Game Over")
+//     score = 0
+//     function refresh () {
+//     setTimeout(refresh, 5);
+// } 
+// }
 
 // })
 
