@@ -57,15 +57,15 @@ for (let i = 0; i < 5; i++) {
     btn4.appendChild(document.createTextNode('$500'))
 }
 
-var question = [
+var question1 = [
     one = {
             prompt: "In baseball and softball what do the initials RBI stand for?\n(a) Home-Run\n\
             (b) Run Batted In\n(c) Free Throw",
             answer: "b"
         },
         {
-            prompt: "Question2\n(a) AnswerB\n\
-            (b) purple\n(c) orange",
+            prompt: "What is the tallest building in the world?\n(a) Your apartment complex\n\
+            (b) the buju khalifa\n(c) World trade center",
             answer: "b"
         },
         {
@@ -84,16 +84,16 @@ var question = [
             answer: "B"
         }
     ]
-    var question1 = [
+    var question2 = [
     two = {
         prompt: "In basketball,what is the term used when a player reaches double digits in three of five statististical categories?\n(a) Double Double\n\
         (b) Triple Double\n(c) Triple Jump",
         answer: "b"
     },
     {
-        prompt: "Question2\n(a) AnswerA\n\
-        (b) purple\n(c) orange",
-        answer: "b"
+        prompt: "Which famous toy manufacturer is also the world’s largest tire manufacturer by units produced?\n(a) Lego\n\
+        (b) Marvel\n(c) Haisbro",
+        answer: "a"
     },
     {
         prompt: "Question3\n(a) AnswerA\n\
@@ -113,14 +113,14 @@ var question = [
 ]
 var question3 = [
     three = {
-        prompt: "Question1\n(a) AnswerA\n\
-        (b) yellow\n(c) orange",
+        prompt: "Which water sport is the official state individual sport of Hawaii?\n(a) Surfing\n\
+        (b) Diving\n(c) Boating",
         answer: "a"
     },
     {
-        prompt: "Question2\n(a) AnswerA\n\
-        (b) purple\n(c) orange",
-        answer: "b"
+        prompt: "The island of Saipan is a commonwealth of which country?\n(a) United States\n\
+        (b) France\n(c) Great Britain",
+        answer: "a"
     },
     {
         prompt: "Question3\n(a) AnswerA\n\
@@ -140,18 +140,18 @@ var question3 = [
 ]
 var question4 = [
     four = {
-        prompt: "Question1\n(a) AnswerA\n\
-        (b) orange\n(c) orange",
+        prompt: "The NBA’s Memphis Grizzlies formerly played in what Canadian city?\n(a) Vancouver\n\
+        (b) Atlanta\n(c) Montreal",
         answer: "a"
     },
     {
-        prompt: "Question2\n(a) AnswerA\n\
-        (b) purple\n(c) orange",
-        answer: "b"
+        prompt: "What is the official language of the Canadian province Quebec?\n(a) English\n\
+        (b) French\n(c) Spanish",
+        answer: "c"
     },
     {
-        prompt: "Question3\n(a) AnswerA\n\
-        (b) purple\n(c) orange",
+        prompt: "What “King” of golf lent his name to a mixture of iced tea and lemonade?\n(a) Tiger Woods\n\
+        (b) Arnold Palmer\n(c) Arnold Palmer",
         answer: "c"
     },
     {
@@ -165,16 +165,43 @@ var question4 = [
         answer: "B"
     },
 ]
+    var question5 = [
+        four = {
+            prompt: "What “King” of golf lent his name to a mixture of iced tea and lemonade?\n(a) Tiger Woods\n\
+            (b) Arnold Palmer\n(c) Arnold Palmer",
+            answer: "c"
+        },
+        {
+            prompt: "What is the official language of the Canadian province Quebec?\n(a) English\n\
+            (b) French\n(c) Spanish",
+            answer: "c"
+        },
+        {
+            prompt: "What “King” of golf lent his name to a mixture of iced tea and lemonade?\n(a) Tiger Woods\n\
+            (b) Arnold Palmer\n(c) Arnold Palmer",
+            answer: "c"
+        },
+        {
+            prompt: "Question3\n(a) AnswerD\n\
+            (b) purple\n(c) orange",
+            answer: "a"
+        },
+        {
+            prompt: "Question3\n(a) AnswerE\n\
+            (b) purple\n(c) orange",
+            answer: "B"
+        },
+]
 
 var row1 = $('.square');
 
 row1.on('click', function (evt) {
     var tile = evt.target.id;
   console.log(evt.target)
-  var prompt = question[tile].prompt;
+  var prompt = question1[tile].prompt;
   alert(prompt);
-  var response = window.prompt(question[tile].prompt);
-  if (response === question[tile].answer) {
+  var response = window.prompt(question1[tile].prompt);
+  if (response === question1[tile].answer) {
     alert('correct')
   } else {
       alert('wrong')
@@ -186,10 +213,10 @@ var row2 = $('.square1');
 row2.on('click', function (evt) {
     var tile = evt.target.id;
   console.log(evt.target)
-  var prompt = question1[tile].prompt;
+  var prompt = question2[tile].prompt;
   alert(prompt);
-  var response = window.prompt(question1[tile].prompt);
-  if (response === question1[tile].answer) {
+  var response = window.prompt(question2[tile].prompt);
+  if (response === question2[tile].answer) {
     alert('correct')
   } else {
       alert('wrong')
@@ -217,7 +244,7 @@ var row4 = $('.square3');
 row4.on('click', function (evt) {
     var tile = evt.target.id;
   console.log(evt.target)
-  var prompt = question3[tile].prompt;
+  var prompt = question4[tile].prompt;
   alert(prompt);
   var response = window.prompt(question3[tile].prompt);
   if (response === question3[tile].answer) {
@@ -233,7 +260,7 @@ var row5 = $('.square4');
 row5.on('click', function (evt) {
     var tile = evt.target.id;
   console.log(evt.target)
-  var prompt = question4[tile].prompt;
+  var prompt = question5[tile].prompt;
   alert(prompt);
   var response = window.prompt(question4[tile].prompt);
   if (response === question4[tile].answer) {

@@ -6,19 +6,20 @@
     padding: 10px;
   }
   
-  .square{
+  .square, .square1, .square2, .square3, .square4{
       background-color: blue;
       text-align: center;
       padding: 20px 0;
       font-size: 30px;
     }
-    .square:hover {
+    .square:hover, .square1:hover, .square2:hover, .square3:hover, .square4:hover {
       background-color: blue;
       color: gold;
       text-align: center;
       padding: 20px 0;
       font-size: 30px;
     }
+
     h1 {
         text-align: center;
     }
