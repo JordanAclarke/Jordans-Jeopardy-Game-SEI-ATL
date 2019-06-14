@@ -184,6 +184,7 @@ let scoreItem = document.querySelector('#score-board')
 var row1 = $('.square');
 
 row1.on('click', function (evt) {
+for(i = 0; i < row1.length; i++) {
     var tile = evt.target.id;
     console.log(evt.target)
     var prompt = question1[tile].prompt;
@@ -201,7 +202,9 @@ row1.on('click', function (evt) {
     let wordsVar = "Score:";
     scoreItem.innerHTML= wordsVar + score;
     console.log(score);
+   
     return;
+}
 })
 
 var row2 = $('.square1');
