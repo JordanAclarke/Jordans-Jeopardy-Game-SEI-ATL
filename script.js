@@ -179,6 +179,16 @@ var question5 = [
 //     },
 // ]
 
+//Plays Jeopardy music if you double click on screen
+$('html').on('dblclick', function () {
+    let sound = document.getElementById("game");
+            sound.play();
+})
+
+$('#instructions').on('click', function () {
+    let sound = document.getElementById("instructions-button");
+            sound.play();
+})
 
 //This code prompts the player to enter their name. If they don't
 //It will auto fill a name for them.
@@ -186,10 +196,10 @@ var question5 = [
 let nameInfo = document.querySelector('#user-name')
 let name = prompt("Enter Your Desired Name")
 let playerName = "Player Name:";
-if(name === "") {
+if (name === "") {
     nameInfo.innerHTML = playerName + " " + "Secret Santa " + "🎅";
 } else {
-nameInfo.innerHTML = playerName + " " + name + "" + "💰";
+    nameInfo.innerHTML = playerName + " " + name + "" + "💰";
 }
 
 //This alerts the player on the game instructions!
@@ -206,6 +216,7 @@ let scoreItem = document.querySelector('#score-board')
 var row1 = $('.square');
 
 row1.on('click', function (evt) {
+
     for (i = 0; i < row1.length; i++) {
         var tile = evt.target.id;
         console.log(evt.target)
@@ -215,9 +226,13 @@ row1.on('click', function (evt) {
         if (response === question1[tile].answer) {
             alert('Correct,Good Job')
             score += 100;
+            let sound = document.getElementById("correct");
+            sound.play();
         } else {
             alert('Wrong!')
             score -= 100;
+            sound = document.getElementById("wrong");
+            sound.play();
         }
         let wordsVar = "Score: $";
         scoreItem.innerHTML = wordsVar + score;
@@ -237,9 +252,13 @@ row2.on('click', function (evt) {
     if (response === question2[tile].answer) {
         alert('Correct, You are on a Roll')
         score += 200;
+        let sound = document.getElementById("clap");
+         sound.play();
     } else {
         alert('Wrong')
         score -= 200;
+        sound = document.getElementById("wrong");
+        sound.play();
     }
     let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
@@ -259,9 +278,13 @@ row3.on('click', function (evt) {
     if (response === question3[tile].answer) {
         alert('Correct!')
         score += 300;
+        let sound = document.getElementById("correct");
+         sound.play();
     } else {
         alert('wrong')
         score -= 300;
+        sound = document.getElementById("wrong");
+        sound.play();
     }
     let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
@@ -280,9 +303,13 @@ row4.on('click', function (evt) {
     if (response === question4[tile].answer) {
         alert('Correct!')
         score += 400;
+        let sound = document.getElementById("correct");
+         sound.play();
     } else {
         alert('Wrong!')
         score -= 400;
+        sound = document.getElementById("wrong");
+        sound.play();
     }
     let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
@@ -302,18 +329,20 @@ row5.on('click', function (evt) {
     if (response === question5[tile].answer) {
         alert('Correct!')
         score += 500;
+        let sound = document.getElementById("clap");
+        sound.play();
     } else {
         alert('Wrong!')
-        score -= 500;     
+        score -= 500;
+        sound = document.getElementById("wrong");
+        sound.play();
     }
     let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
     console.log(score);
     return;
 })
-if(score >= 3750) {
-    alert('You Have Won! Continue if you wish')
-};
+
 
 // var row6 = $('#final');
 
@@ -329,7 +358,7 @@ if(score >= 3750) {
 //         alert('Wrong!')
 //     } if (response === question6[tile].answer) {
 //         score += 1000;
-        
+
 //     } else {
 //         score -= 1000;
 //     }

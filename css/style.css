@@ -63,10 +63,10 @@
  }
   
   
-  /* body {
-      /* background-image: url("./giphy-2.gif");
-      background-size: cover; */
-  /* }  */
+  body {
+     background-color: whitesmoke;
+      background-size: cover; 
+  }
 
   #score-board {
     font-weight: bold;
