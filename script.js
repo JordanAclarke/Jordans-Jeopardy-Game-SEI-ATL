@@ -12,9 +12,9 @@ for (let i = 0; i < 5; i++) {
 for (let i = 0; i < 5; i++) {
     let btn = document.createElement('button');
     btn.classList.add('square');
-    // btn.dataset.column = i
-    // btn.dataset.row = "one"
-    // btn.classList.add = i;
+    btn.dataset.column = i
+    btn.dataset.row = "one"
+    btn.classList.add = i;
     btn.setAttribute("id", i)
     btn.appendChild(document.createTextNode('$100'))
     gameBoard.appendChild(btn);
@@ -185,18 +185,23 @@ var question5 = [
 // ]
 
 
-//This alerts the player on how to enter 
+//This alerts the player on the game instructions!
 alert('Instructions:\nEnter the multiple-choice answer in lowercase form!');
 
+//This code prompts the player to enter their name. If they don't
+//It will auto fill a name for them.
+//It will store the name as well
 let nameInfo = document.querySelector('#user-name')
 let name = prompt("Enter Your Desired Name")
 let playerName = "Player Name:";
 if(name === "") {
     nameInfo.innerHTML = playerName + " " + "Secret Santa " + "🎅";
 } else {
-nameInfo.innerHTML = playerName + " " + name;
+nameInfo.innerHTML = playerName + " " + name + "" + "💰";
 }
 
+//This targets the $100 row and tracks each click
+//Upon click, the user is alerted a question
 let score = 0
 let scoreItem = document.querySelector('#score-board')
 
