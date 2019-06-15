@@ -185,14 +185,14 @@ var question5 = [
 // ]
 
 
-
+//This alerts the player on how to enter 
 alert('Instructions:\nEnter the multiple-choice answer in lowercase form!');
 
 let nameInfo = document.querySelector('#user-name')
 let name = prompt("Enter Your Desired Name")
 let playerName = "Player Name:";
 if(name === "") {
-    nameInfo.innerHTML = playerName + " " + "Secret Santa";
+    nameInfo.innerHTML = playerName + " " + "Secret Santa " + "🎅";
 } else {
 nameInfo.innerHTML = playerName + " " + name;
 }
@@ -211,14 +211,12 @@ row1.on('click', function (evt) {
         var response = window.prompt(question1[tile].prompt);
         if (response === question1[tile].answer) {
             alert('Correct,Good Job')
-        } else {
-            alert('Wrong!')
-        } if (response === question1[tile].answer) {
             score += 100;
         } else {
+            alert('Wrong!')
             score -= 100;
         }
-        let wordsVar = "Score:";
+        let wordsVar = "Score: $";
         scoreItem.innerHTML = wordsVar + score;
         console.log(score);
         return;
@@ -235,14 +233,12 @@ row2.on('click', function (evt) {
     var response = window.prompt(question2[tile].prompt);
     if (response === question2[tile].answer) {
         alert('Correct, You are on a Roll')
-    } else {
-        alert('Wrong')
-    } if (response === question2[tile].answer) {
         score += 200;
     } else {
+        alert('Wrong')
         score -= 200;
     }
-    let wordsVar = "Score:";
+    let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
     console.log(score);
     return;
@@ -259,14 +255,12 @@ row3.on('click', function (evt) {
     var response = window.prompt(question3[tile].prompt);
     if (response === question3[tile].answer) {
         alert('Correct!')
-    } else {
-        alert('wrong')
-    } if (response === question3[tile].answer) {
         score += 300;
     } else {
+        alert('wrong')
         score -= 300;
     }
-    let wordsVar = "Score:";
+    let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
     console.log(score);
     return;
@@ -282,14 +276,12 @@ row4.on('click', function (evt) {
     var response = window.prompt(question4[tile].prompt);
     if (response === question4[tile].answer) {
         alert('Correct!')
-    } else {
-        alert('Wrong!')
-    } if (response === question4[tile].answer) {
         score += 400;
     } else {
+        alert('Wrong!')
         score -= 400;
     }
-    let wordsVar = "Score:";
+    let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
     console.log(score);
     return;
@@ -306,15 +298,12 @@ row5.on('click', function (evt) {
     var response = window.prompt(question5[tile].prompt);
     if (response === question5[tile].answer) {
         alert('Correct!')
+        score += 500;
     } else {
         alert('Wrong!')
-    } if (response === question5[tile].answer) {
-        score += 500;
-        
-    } else {
-        score -= 500;
+        score -= 500;     
     }
-    let wordsVar = "Score:";
+    let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
     console.log(score);
     return;
