@@ -155,7 +155,7 @@ var question4 = [
     },
 ]
 var question5 = [
-    four = {
+    five = {
         prompt: "What “King” of golf lent his name to a mixture of iced tea and lemonade?\n(a) Tiger Woods\n\(b) Micheal Jordan\n(c) Arnold Palmer",
         answer: "c"
     },
@@ -177,7 +177,13 @@ var question5 = [
         answer: "a"
     },
 ]
-
+// var question6 = [
+//     six = {
+//         prompt: "WHAT COMES ONCE IN A MINUTE AND TWICE IN A MOMENT, BUT NEVER IN A THOUSAND YEARS?\n(a) A light year\n\(b)A Leap Year\n\(c) The letter M",
+//         answer: "c"
+//     },
+// ]
+alert('Instructions:\nEnter the multiple-choice answer in lowercase form!');
 let score = 0
 let scoreItem = document.querySelector('#score-board')
 
@@ -291,10 +297,9 @@ row5.on('click', function (evt) {
         alert('Wrong!')
     } if (response === question5[tile].answer) {
         score += 500;
-        document.querySelector('.button').style.color = "blue";
+        
     } else {
         score -= 500;
-        document.querySelector('.button').style.color = "blue";
     }
     let wordsVar = "Score:";
     scoreItem.innerHTML = wordsVar + score;
@@ -302,6 +307,29 @@ row5.on('click', function (evt) {
     return;
 })
 
+// var row6 = $('#final');
+
+// row6.on('click', function (evt) {
+//     var tile = evt.target.id;
+//     console.log(evt.target)
+//     var prompt = question6.prompt;
+//     alert(prompt);
+//     var response = window.prompt(question6[tile].prompt);
+//     if (response === question6[tile].answer) {
+//         alert('Correct!')
+//     } else {
+//         alert('Wrong!')
+//     } if (response === question6[tile].answer) {
+//         score += 1000;
+        
+//     } else {
+//         score -= 1000;
+//     }
+//     let wordsVar = "Score:";
+//     scoreItem.innerHTML = wordsVar + score;
+//     console.log(score);
+//     return;
+// })
 // if(score === 7200 ) {
 //     alert("you're an all time great!")
 // } else if (score === 4000) {
