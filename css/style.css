@@ -26,6 +26,7 @@
       text-align: center;
       padding: 20px 0;
       font-size: 30px;
+      font-family: 'Varela Round', sans-serif;
     }
     .square:hover, .square1:hover, .square2:hover, .square3:hover, .square4:hover {
       background-color: blue;
