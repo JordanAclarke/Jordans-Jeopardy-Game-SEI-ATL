@@ -38,6 +38,7 @@
     h1 {
         text-align: center;
         color: gold;
+        font-family: 'Varela Round', sans-serif;
     }
   .categories {
       font-size: 25px;
@@ -48,9 +49,11 @@
       
   }
   
-  body {
-      /* background-image: url("./giphy.gif"); */
-  }
+  
+  /* body {
+      /* background-image: url("./giphy-2.gif");
+      background-size: cover; */
+  /* }  */
   #score-board {
       text-align: right;
       /* color: gold; */
@@ -62,7 +65,7 @@
     display: flex;
     justify-content: space-around;
     font-size: 28px;
-    font-family: cursive;
+    font-family: 'Lobster', cursive;
   }
   
   
