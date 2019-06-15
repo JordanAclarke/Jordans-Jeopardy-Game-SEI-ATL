@@ -48,17 +48,17 @@
       margin: 0 auto;
       
   }
+  #user-name {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    font-weight: 500; 
+  }
   
   
   /* body {
       /* background-image: url("./giphy-2.gif");
       background-size: cover; */
   /* }  */
-  #score-board {
-      text-align: right;
-      /* color: gold; */
-  
-  }
 
   #score-board {
     font-weight: bold;

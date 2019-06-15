@@ -183,7 +183,20 @@ var question5 = [
 //         answer: "c"
 //     },
 // ]
+
+
+
 alert('Instructions:\nEnter the multiple-choice answer in lowercase form!');
+
+let nameInfo = document.querySelector('#user-name')
+let name = prompt("Enter Your Desired Name")
+let playerName = "Player Name:";
+if(name === "") {
+    nameInfo.innerHTML = playerName + " " + "Secret Santa";
+} else {
+nameInfo.innerHTML = playerName + " " + name;
+}
+
 let score = 0
 let scoreItem = document.querySelector('#score-board')
 
