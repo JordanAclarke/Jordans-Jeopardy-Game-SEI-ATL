@@ -7,7 +7,7 @@ Once players come to the site, they can enter team names.
 
 [Trello](https://trello.com/b/flB78Yx0/jordan-clarke-project-board)
 
-[Netlify]
+[Project] (https://sei22jeopardy.netlify.com/)
 
 ## Technologies Used
 - Languauges- HTML5, CSS, Javascript, JQuery
