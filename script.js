@@ -61,30 +61,25 @@ for (let i = 0; i < 5; i++) {
 var question1 = [
     one = {
         prompt: "In baseball and softball what do the initials RBI stand for?\n(a) Home-Run\n\(b) Run Batted In\n(c) Free Throw",
-        answer: "b",
-        scorePoints: 100,
+        answer: "b"
     },
     {
         prompt: "What is the tallest building in the world?\n(a) Your apartment complex\n\(b) the buju khalifa\n(c) World trade center",
-        answer: "b",
-        scorePoints: 200,
+        answer: "b"
     },
     {
         prompt: "On the popular social website Reddit, what does AMA stand for?\n(a) Ask me Alot\n\(b) Ask Me Anything\n(c) American Music Awards",
-        answer: "b",
-        scorePoints: 300,
+        answer: "b"
     },
     {
         prompt: "In which year were the Academy Awards, or Oscars, first presented?\n(a) 2019\n\
             (b) 1929\n(c) 1964",
-        answer: "b",
-        scorePoints: 400,
+        answer: "b"
     },
     {
         prompt: "When was America discovered\n(a) 1500\n\
             (b) 1492\n(c) 1990",
-        answer: "b",
-        scorePoints: 500,
+        answer: "b"
     }
 ]
 var question2 = [
@@ -185,9 +180,6 @@ var question5 = [
 // ]
 
 
-//This alerts the player on the game instructions!
-alert('Instructions:\nEnter the multiple-choice answer in lowercase form!');
-
 //This code prompts the player to enter their name. If they don't
 //It will auto fill a name for them.
 //It will store the name as well
@@ -200,6 +192,12 @@ if(name === "") {
 nameInfo.innerHTML = playerName + " " + name + "" + "💰";
 }
 
+//This alerts the player on the game instructions!
+alert('Instructions:\nPlease Enter the multiple-choice answer in lowercase form!\nTo Win, You Will Need Atleast $3750 Jeopardy Dollars\n Good Luck');
+
+$('#instructions').on('click', function () {
+    alert("Instructions:\nPlease Enter the multiple-choice answer in lowercase form!\nTo Win, You Will Need Atleast $3750 Jeopardy Dollars\n Good Luck!");
+})
 //This targets the $100 row and tracks each click
 //Upon click, the user is alerted a question
 let score = 0
@@ -313,6 +311,9 @@ row5.on('click', function (evt) {
     console.log(score);
     return;
 })
+if(score >= 3750) {
+    alert('You Have Won! Continue if you wish')
+};
 
 // var row6 = $('#final');
 
