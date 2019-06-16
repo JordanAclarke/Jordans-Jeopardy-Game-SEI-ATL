@@ -20,7 +20,7 @@ Once players come to the site, they can enter team names.
 ## Wireframe
 Startup: ![homepage](https://github.com/JordanAclarke/Jordans-Jeopardy-Game-SEI-ATL/blob/master/WireFrame%20Photos/StartUp%20Home%20Page.png)
 
-When a question appears: ![Questionprompt](WireFrame Photos/Question Pop Up.png)
+When a question appears: ![Questionprompt](https://github.com/JordanAclarke/Jordans-Jeopardy-Game-SEI-ATL/blob/master/WireFrame%20Photos/Question%20Pop%20Up.png)
 
 ## Future Development
 - Add more interactive abilities
