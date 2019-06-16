@@ -38,7 +38,7 @@
 
     h1 {
         text-align: center;
-        color: gold;
+        color: black;
         font-family: 'Varela Round', sans-serif;
     }
   .categories {
@@ -53,6 +53,7 @@
     font-family: 'Lobster', cursive;
     font-size: 30px;
     font-weight: 500; 
+    text-align: center;
   }
  #instructions {
    background-color: goldenrod;

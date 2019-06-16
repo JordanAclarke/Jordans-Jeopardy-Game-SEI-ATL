@@ -1,12 +1,12 @@
 let gameBoard = document.querySelector('.game-board');
-const titlesArray = ["Sports", "World", "Technology", "Media", "U.S. History"]
+const titlesBox = ["Sports", "World", "Technology", "Media", "U.S. History"]
 for (let i = 0; i < 5; i++) {
     let columns = document.createElement('h2');
     columns.classList.add('categories');
     columns.classList.add = i
     columns.setAttribute("id", i)
     gameBoard.appendChild(columns);
-    columns.appendChild(document.createTextNode(titlesArray[i]));
+    columns.appendChild(document.createTextNode(titlesBox[i]));
 }
 
 for (let i = 0; i < 5; i++) {
@@ -56,7 +56,14 @@ for (let i = 0; i < 5; i++) {
     gameBoard.appendChild(btn4);
     btn4.appendChild(document.createTextNode('$500'))
 }
-
+// for (let i = 0; i < 1; i++) {
+//     let btn4 = document.createElement('button');
+//     btn4.classList.add('square5');
+//     btn4.dataset.column = i
+//     btn4.setAttribute("id", i)
+//     gameBoard.appendChild(btn4);
+//     btn4.appendChild(document.createTextNode('Bonus'))
+// }
 
 var question1 = [
     one = {
@@ -193,11 +200,14 @@ $('#instructions').on('click', function () {
 //This code prompts the player to enter their name. If they don't
 //It will auto fill a name for them.
 //It will store the name as well
+
 let nameInfo = document.querySelector('#user-name')
 let name = prompt("Enter Your Desired Name")
 let playerName = "Player Name:";
 if (name === "") {
     nameInfo.innerHTML = playerName + " " + "Secret Santa " + "🎅";
+} else if(name === null) { 
+    nameInfo.innerHTML = playerName + " " + "Secret Santa " + "🎅";  
 } else {
     nameInfo.innerHTML = playerName + " " + name + "" + "💰";
 }
@@ -234,6 +244,11 @@ row1.on('click', function (evt) {
             sound = document.getElementById("wrong");
             sound.play();
         }
+        if(score > 3750) {
+            alert('You Won The Game!')
+        } else if (score === 3750) {
+            alert("You Have Tied The Game")
+        } 
         let wordsVar = "Score: $";
         scoreItem.innerHTML = wordsVar + score;
         console.log(score);
@@ -260,6 +275,11 @@ row2.on('click', function (evt) {
         sound = document.getElementById("wrong");
         sound.play();
     }
+    if(score > 3750) {
+        alert('You Won The Game!')
+    } else if (score === 3750) {
+        alert("You Have Tied The Game")
+    } 
     let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
     console.log(score);
@@ -286,6 +306,11 @@ row3.on('click', function (evt) {
         sound = document.getElementById("wrong");
         sound.play();
     }
+    if(score > 3750) {
+        alert('You Won The Game!')
+    } else if (score === 3750) {
+        alert("You Have Tied The Game")
+    } 
     let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
     console.log(score);
@@ -311,6 +336,11 @@ row4.on('click', function (evt) {
         sound = document.getElementById("wrong");
         sound.play();
     }
+    if(score > 3750) {
+        alert('You Won The Game!')
+    } else if (score === 3750) {
+        alert("You Have Tied The Game")
+    } 
     let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
     console.log(score);
@@ -337,6 +367,11 @@ row5.on('click', function (evt) {
         sound = document.getElementById("wrong");
         sound.play();
     }
+    if(score > 3750) {
+        alert('You Won The Game!')
+    } else if (score === 3750) {
+        alert("You Have Tied The Game")
+    } 
     let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
     console.log(score);
