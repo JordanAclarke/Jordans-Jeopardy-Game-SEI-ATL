@@ -252,6 +252,8 @@ row1.on('click', function (evt) {
         let wordsVar = "Score: $";
         scoreItem.innerHTML = wordsVar + score;
         console.log(score);
+        //disable the button after clicked
+        $(this).attr('disabled','disabled');
         return;
     }
 })
@@ -283,6 +285,8 @@ row2.on('click', function (evt) {
     let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
     console.log(score);
+    //disable the button after clicked
+    $(this).attr('disabled','disabled');
     return;
 })
 
@@ -314,6 +318,8 @@ row3.on('click', function (evt) {
     let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
     console.log(score);
+    //disable the button after clicked
+    $(this).attr('disabled','disabled');
     return;
 })
 
@@ -344,6 +350,8 @@ row4.on('click', function (evt) {
     let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
     console.log(score);
+    //disable the button after clicked
+    $(this).attr('disabled','disabled');
     return;
 })
 
@@ -375,6 +383,8 @@ row5.on('click', function (evt) {
     let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
     console.log(score);
+    //disable the button after clicked
+    $(this).attr('disabled','disabled');
     return;
 })
 
