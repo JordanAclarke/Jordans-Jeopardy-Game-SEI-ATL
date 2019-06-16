@@ -1,13 +1,16 @@
 # Jeopardy !!
-For Project one I decided to implement a simple Jeopardy game. 
+For project one, I decided to implement a simple Jeopardy game. 
 
-Once players come to the site, they can enter team names.
+Once players come to the site, they can enter their desired user-name.
+
+The player is allowed to play the game until he reaches the winning score or completes the game board. 
+
 
 ## Links
 
 [Trello](https://trello.com/b/flB78Yx0/jordan-clarke-project-board)
 
-[Project] (https://sei22jeopardy.netlify.com/)
+[My Jeopardy Game](https://sei22jeopardy.netlify.com/)
 
 ## Technologies Used
 - Languauges- HTML5, CSS, Javascript, JQuery

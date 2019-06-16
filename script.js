@@ -79,13 +79,11 @@ var question1 = [
         answer: "b"
     },
     {
-        prompt: "In which year were the Academy Awards, or Oscars, first presented?\n(a) 2019\n\
-            (b) 1929\n(c) 1964",
+        prompt: "In which year were the Academy Awards, or Oscars, first presented?\n(a) 2019\n\(b) 1929\n(c) 1964",
         answer: "b"
     },
     {
-        prompt: "When was America discovered\n(a) 1500\n\
-            (b) 1492\n(c) 1990",
+        prompt: "When was America discovered\n(a) 1500\n\(b) 1492\n(c) 1990",
         answer: "b"
     }
 ]
@@ -151,8 +149,7 @@ var question4 = [
         answer: "a"
     },
     {
-        prompt: "What year the U.S. Stock Market faced the Black Monday?\n(a) 1872\n\
-        (b) 1987\n(c) 1920",
+        prompt: "What year the U.S. Stock Market faced the Black Monday?\n(a) 1872\n\(b) 1987\n(c) 1920",
         answer: "b"
     },
 ]
@@ -170,8 +167,7 @@ var question5 = [
         answer: "c"
     },
     {
-        prompt: "Who was the youngest person to host Saturday Night Live?\n(a) Miley Cyrus\n\
-            (b) John Legend\n(c) Drew Barrymore",
+        prompt: "Who was the youngest person to host Saturday Night Live?\n(a) Miley Cyrus\n\(b) John Legend\n(c) Drew Barrymore",
         answer: "c"
     },
     {
@@ -189,12 +185,12 @@ var question5 = [
 //Plays Jeopardy music if you double click on screen
 $('html').on('dblclick', function () {
     let sound = document.getElementById("game");
-            sound.play();
+    sound.play();
 })
 
 $('#instructions').on('click', function () {
     let sound = document.getElementById("instructions-button");
-            sound.play();
+    sound.play();
 })
 
 //This code prompts the player to enter their name. If they don't
@@ -206,17 +202,17 @@ let name = prompt("Enter Your Desired Name")
 let playerName = "Player Name:";
 if (name === "") {
     nameInfo.innerHTML = playerName + " " + "Secret Santa " + "🎅";
-} else if(name === null) { 
-    nameInfo.innerHTML = playerName + " " + "Secret Santa " + "🎅";  
+} else if (name === null) {
+    nameInfo.innerHTML = playerName + " " + "Secret Santa " + "🎅";
 } else {
     nameInfo.innerHTML = playerName + " " + name + "" + "💰";
 }
 
 //This alerts the player on the game instructions!
-alert('Instructions:\nPlease Enter the multiple-choice answer in lowercase form!\nTo Win, You Will Need Atleast $3750 Jeopardy Dollars\n Good Luck');
+alert('Instructions:\nPlease Enter the multiple-choice answer in the Box!\nTo Win, You Will Need Atleast $3750 Jeopardy Dollars\n Good Luck');
 
 $('#instructions').on('click', function () {
-    alert("Instructions:\nPlease Enter the multiple-choice answer in lowercase form!\nTo Win, You Will Need Atleast $3750 Jeopardy Dollars\n Good Luck!");
+    alert("Instructions:\nPlease Enter the multiple-choice answer in the Box!\nTo Win, You Will Need Atleast $3750 Jeopardy Dollars\n Good Luck!");
 })
 //This targets the $100 row and tracks each click
 //Upon click, the user is alerted a question
@@ -233,7 +229,7 @@ row1.on('click', function (evt) {
         var prompt = question1[tile].prompt;
         alert(prompt);
         var response = window.prompt(question1[tile].prompt);
-        if (response === question1[tile].answer) {
+        if (response.toLowerCase() === question1[tile].answer) {
             alert('Correct,Good Job')
             score += 100;
             let sound = document.getElementById("correct");
@@ -244,16 +240,16 @@ row1.on('click', function (evt) {
             sound = document.getElementById("wrong");
             sound.play();
         }
-        if(score > 3750) {
+        if (score > 3750) {
             alert('You Won The Game!')
         } else if (score === 3750) {
             alert("You Have Tied The Game")
-        } 
+        }
         let wordsVar = "Score: $";
         scoreItem.innerHTML = wordsVar + score;
         console.log(score);
         //disable the button after clicked
-        $(this).attr('disabled','disabled');
+        $(this).attr('disabled', 'disabled');
         return;
     }
 })
@@ -266,27 +262,27 @@ row2.on('click', function (evt) {
     var prompt = question2[tile].prompt;
     alert(prompt);
     var response = window.prompt(question2[tile].prompt);
-    if (response === question2[tile].answer) {
+    if (response.toLowerCase() === question2[tile].answer) {
         alert('Correct, You are on a Roll')
         score += 200;
         let sound = document.getElementById("clap");
-         sound.play();
+        sound.play();
     } else {
         alert('Wrong')
         score -= 200;
         sound = document.getElementById("wrong");
         sound.play();
     }
-    if(score > 3750) {
+    if (score > 3750) {
         alert('You Won The Game!')
     } else if (score === 3750) {
         alert("You Have Tied The Game")
-    } 
+    }
     let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
     console.log(score);
     //disable the button after clicked
-    $(this).attr('disabled','disabled');
+    $(this).attr('disabled', 'disabled');
     return;
 })
 
@@ -299,27 +295,27 @@ row3.on('click', function (evt) {
     var prompt = question3[tile].prompt;
     alert(prompt);
     var response = window.prompt(question3[tile].prompt);
-    if (response === question3[tile].answer) {
+    if (response.toLowerCase() === question3[tile].answer) {
         alert('Correct!')
         score += 300;
         let sound = document.getElementById("correct");
-         sound.play();
+        sound.play();
     } else {
         alert('wrong')
         score -= 300;
         sound = document.getElementById("wrong");
         sound.play();
     }
-    if(score > 3750) {
+    if (score > 3750) {
         alert('You Won The Game!')
     } else if (score === 3750) {
         alert("You Have Tied The Game")
-    } 
+    }
     let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
     console.log(score);
     //disable the button after clicked
-    $(this).attr('disabled','disabled');
+    $(this).attr('disabled', 'disabled');
     return;
 })
 
@@ -331,27 +327,27 @@ row4.on('click', function (evt) {
     var prompt = question4[tile].prompt;
     alert(prompt);
     var response = window.prompt(question4[tile].prompt);
-    if (response === question4[tile].answer) {
+    if (response.toLowerCase() === question4[tile].answer) {
         alert('Correct!')
         score += 400;
         let sound = document.getElementById("correct");
-         sound.play();
+        sound.play();
     } else {
         alert('Wrong!')
         score -= 400;
         sound = document.getElementById("wrong");
         sound.play();
     }
-    if(score > 3750) {
+    if (score > 3750) {
         alert('You Won The Game!')
     } else if (score === 3750) {
         alert("You Have Tied The Game")
-    } 
+    }
     let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
     console.log(score);
     //disable the button after clicked
-    $(this).attr('disabled','disabled');
+    $(this).attr('disabled', 'disabled');
     return;
 })
 
@@ -364,7 +360,7 @@ row5.on('click', function (evt) {
     var prompt = question5[tile].prompt;
     alert(prompt);
     var response = window.prompt(question5[tile].prompt);
-    if (response === question5[tile].answer) {
+    if (response.toLowerCase() === question5[tile].answer) {
         alert('Correct!')
         score += 500;
         let sound = document.getElementById("clap");
@@ -375,18 +371,19 @@ row5.on('click', function (evt) {
         sound = document.getElementById("wrong");
         sound.play();
     }
-    if(score > 3750) {
+    if (score > 3750) {
         alert('You Won The Game!')
     } else if (score === 3750) {
         alert("You Have Tied The Game")
-    } 
+    }
     let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
     console.log(score);
     //disable the button after clicked
-    $(this).attr('disabled','disabled');
+    $(this).attr('disabled', 'disabled');
     return;
 })
+
 
 
 // var row6 = $('#final');

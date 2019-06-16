@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     grid-gap: 14px;
-    background-color: black;
     padding: 10px;
   }
   #final {
@@ -22,14 +21,14 @@
   }
   
   .square, .square1, .square2, .square3, .square4{
-      background-color: blue;
+      background-color: #0D00A2;
       text-align: center;
       padding: 20px 0;
       font-size: 30px;
       font-family: 'Varela Round', sans-serif;
     }
     .square:hover, .square1:hover, .square2:hover, .square3:hover, .square4:hover {
-      background-color: blue;
+      background-color: #8614FF;
       color: gold;
       text-align: center;
       padding: 20px 0;
@@ -38,8 +37,9 @@
 
     h1 {
         text-align: center;
-        color: black;
-        font-family: 'Varela Round', sans-serif;
+        color: gold;
+        font-family: 'Righteous', cursive;
+        /* background-image: url('../css/giphy-2.gif'); */
     }
   .categories {
       font-size: 25px;
@@ -47,27 +47,32 @@
       color:gold;
       text-align: center;
       margin: 0 auto;
-      
   }
   #user-name {
     font-family: 'Lobster', cursive;
     font-size: 30px;
     font-weight: 500; 
     text-align: center;
+    color: gold;
+    /* background-image: url('../css/giphy-2.gif'); */
   }
  #instructions {
    background-color: goldenrod;
    color: black;
+   font-family: 'Varela Round', sans-serif;
  }
  #instructions:hover {
-   background-color: blue;
-   text: gold;
+   background-color: #8614FF;
+   color: gold;
+   font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+   font-size: 28px;
  }
   
   
   body {
-     background-color: whitesmoke;
+     background-image: url('../css/giphy-10.gif');
       background-size: cover; 
+      /* background-color: black; */
   }
 
   #score-board {
@@ -76,6 +81,8 @@
     justify-content: space-around;
     font-size: 28px;
     font-family: 'Lobster', cursive;
+    color: green;
+    /* background-image: url('../css/giphy-2.gif'); */
   }
   
   
