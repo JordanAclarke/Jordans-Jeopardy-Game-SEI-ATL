@@ -56,14 +56,7 @@ for (let i = 0; i < 5; i++) {
     gameBoard.appendChild(btn4);
     btn4.appendChild(document.createTextNode('$500'))
 }
-// for (let i = 0; i < 1; i++) {
-//     let btn4 = document.createElement('button');
-//     btn4.classList.add('square5');
-//     btn4.dataset.column = i
-//     btn4.setAttribute("id", i)
-//     gameBoard.appendChild(btn4);
-//     btn4.appendChild(document.createTextNode('Bonus'))
-// }
+
 
 var question1 = [
     one = {
@@ -175,12 +168,6 @@ var question5 = [
         answer: "a"
     },
 ]
-// var question6 = [
-//     six = {
-//         prompt: "WHAT COMES ONCE IN A MINUTE AND TWICE IN A MOMENT, BUT NEVER IN A THOUSAND YEARS?\n(a) A light year\n\(b)A Leap Year\n\(c) The letter M",
-//         answer: "c"
-//     },
-// ]
 
 //Plays Jeopardy music if you double click on screen
 $('html').on('dblclick', function () {
@@ -218,7 +205,7 @@ $('#instructions').on('click', function () {
 //Upon click, the user is alerted a question
 let score = 0
 let scoreItem = document.querySelector('#score-board')
-
+//Row 1
 var row1 = $('.square');
 
 row1.on('click', function (evt) {
@@ -248,7 +235,7 @@ row1.on('click', function (evt) {
         return;
     }
 })
-
+//Row 2
 var row2 = $('.square1');
 
 row2.on('click', function (evt) {
@@ -276,7 +263,7 @@ row2.on('click', function (evt) {
     return;
 })
 
-
+//Row 3
 var row3 = $('.square2');
 
 row3.on('click', function (evt) {
@@ -303,7 +290,7 @@ row3.on('click', function (evt) {
     $(this).attr('disabled', 'disabled');
     return;
 })
-
+//Row 4
 var row4 = $('.square3');
 
 row4.on('click', function (evt) {
@@ -331,7 +318,7 @@ row4.on('click', function (evt) {
     return;
 })
 
-
+//Row 5
 var row5 = $('.square4');
 
 row5.on('click', function (evt) {
@@ -358,7 +345,7 @@ row5.on('click', function (evt) {
     $(this).attr('disabled', 'disabled');
     return;
 })
-
+//Winning and Losing Conditions
 $('.square, .square1, .square2, .square3, .square4').on('click', function(){
     if(score > 3750) {
         alert('You Have Won The Game!')
