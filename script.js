@@ -384,6 +384,13 @@ row5.on('click', function (evt) {
     return;
 })
 
+$('.square, .square1, .square2, .square3, .square4').on('click', function(){
+    if(score <= -500) {
+        alert('You Have Lost The Game, Refresh To Try Again')
+        $('.square, .square1, .square2, .square3, .square4').attr('disabled', 'disabled');
+    } return;
+})
+
 
 
 // var row6 = $('#final');
