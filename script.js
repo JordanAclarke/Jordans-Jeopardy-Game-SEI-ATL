@@ -240,11 +240,6 @@ row1.on('click', function (evt) {
             sound = document.getElementById("wrong");
             sound.play();
         }
-        if (score > 3750) {
-            alert('You Won The Game!')
-        } else if (score === 3750) {
-            alert("You Have Tied The Game")
-        }
         let wordsVar = "Score: $";
         scoreItem.innerHTML = wordsVar + score;
         console.log(score);
@@ -272,11 +267,6 @@ row2.on('click', function (evt) {
         score -= 200;
         sound = document.getElementById("wrong");
         sound.play();
-    }
-    if (score > 3750) {
-        alert('You Won The Game!')
-    } else if (score === 3750) {
-        alert("You Have Tied The Game")
     }
     let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
@@ -306,11 +296,6 @@ row3.on('click', function (evt) {
         sound = document.getElementById("wrong");
         sound.play();
     }
-    if (score > 3750) {
-        alert('You Won The Game!')
-    } else if (score === 3750) {
-        alert("You Have Tied The Game")
-    }
     let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
     console.log(score);
@@ -337,11 +322,6 @@ row4.on('click', function (evt) {
         score -= 400;
         sound = document.getElementById("wrong");
         sound.play();
-    }
-    if (score > 3750) {
-        alert('You Won The Game!')
-    } else if (score === 3750) {
-        alert("You Have Tied The Game")
     }
     let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
@@ -371,11 +351,6 @@ row5.on('click', function (evt) {
         sound = document.getElementById("wrong");
         sound.play();
     }
-    if (score > 3750) {
-        alert('You Won The Game!')
-    } else if (score === 3750) {
-        alert("You Have Tied The Game")
-    }
     let wordsVar = "Score: $";
     scoreItem.innerHTML = wordsVar + score;
     console.log(score);
@@ -385,83 +360,15 @@ row5.on('click', function (evt) {
 })
 
 $('.square, .square1, .square2, .square3, .square4').on('click', function(){
-    if(score <= -500) {
+    if(score > 3750) {
+        alert('You Have Won The Game!')
+        $('.square, .square1, .square2, .square3, .square4').attr('disabled', 'disabled');
+    } else if (score === 3750) {
+        alert('You Have Tied The Game')
+    }
+    else if (score <= -1000) {
         alert('You Have Lost The Game, Refresh To Try Again')
         $('.square, .square1, .square2, .square3, .square4').attr('disabled', 'disabled');
-    } return;
+    }
 })
 
-
-
-// var row6 = $('#final');
-
-// row6.on('click', function (evt) {
-//     var tile = evt.target.id;
-//     console.log(evt.target)
-//     var prompt = question6.prompt;
-//     alert(prompt);
-//     var response = window.prompt(question6[tile].prompt);
-//     if (response === question6[tile].answer) {
-//         alert('Correct!')
-//     } else {
-//         alert('Wrong!')
-//     } if (response === question6[tile].answer) {
-//         score += 1000;
-
-//     } else {
-//         score -= 1000;
-//     }
-//     let wordsVar = "Score:";
-//     scoreItem.innerHTML = wordsVar + score;
-//     console.log(score);
-//     return;
-// })
-// if(score === 7200 ) {
-//     alert("you're an all time great!")
-// } else if (score === 4000) {
-//     alert("You win")
-// } else if(score < 3999) {
-//     alert("Game Over")
-//     score = 0
-//     function refresh () {
-//     setTimeout(refresh, 5);
-// } 
-// }
-
-// })
-
-
-    //     var score = 0;
-    //     for(var i = 0; i < question.length; i++) {
-    //         var response = window.prompt(question[i].prompt);
-    //         if(response === question[i].answer) {
-    //             score++;
-    //             prompt("Correct");
-    //         } else {
-    //             prompt("Wrong!");
-    //             score--
-    //         } return;
-    //     } 
-    // })
-
-
-
-
-
-
-// $(document).ready(function () {
-
-//     $('.square').on('click', function (evt) {
-//         prompt(questions[this.dataset.row][this.dataset.column])
-
-
-        // console.log(document.getElementById('results').dataset)
-
-        // let questionTileInfo = evt.target.id;
-        // event.target.innerHtml = questions[questionTileInfo]
-
-    // });
-
-
-
-    // })
