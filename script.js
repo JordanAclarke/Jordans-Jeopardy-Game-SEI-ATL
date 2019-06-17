@@ -196,10 +196,10 @@ if (name === "") {
 }
 
 //This alerts the player on the game instructions!
-alert('Instructions:\nPlease Enter the multiple-choice answer in the Box!\nTo Win, You Will Need Atleast $3750 Jeopardy Dollars, But If You Reach -$1000, You Will Lose The Game\n Good Luck');
+alert('Instructions:\nPlease Enter the multiple-choice answer in the Box!\nTo Win, You Will Need Atleast $3750 Jeopardy Dollars, But If You Reach -$1000, You Will Lose The Game\n Good Luck!! 🍀');
 
 $('#instructions').on('click', function () {
-    alert("Instructions:\nPlease Enter the multiple-choice answer in the Box!\nTo Win, You Will Need Atleast $3750 Jeopardy Dollars To Win But If You Reach -$1000, You Will Lose The Game!\n Good Luck!");
+    alert("Instructions:\nPlease Enter the multiple-choice answer in the Box!\nTo Win, You Will Need Atleast $3750 Jeopardy Dollars To Win But If You Reach -$1000, You Will Lose The Game!\n Good Luck!! 🍀");
 })
 //This targets the $100 row and tracks each click
 //Upon click, the user is alerted a question
