@@ -57,7 +57,7 @@ for (let i = 0; i < 5; i++) {
     btn4.appendChild(document.createTextNode('$500'))
 }
 
-
+//Questions for Jeopardy Game
 var question1 = [
     one = {
         prompt: "In baseball and softball what do the initials RBI stand for?\n(a) Home-Run\n\(b) Run Batted In\n(c) Free Throw",
@@ -174,7 +174,7 @@ $('html').on('dblclick', function () {
     let sound = document.getElementById("game");
     sound.play();
 })
-
+//Plays a warping sound if you click the instruction button
 $('#instructions').on('click', function () {
     let sound = document.getElementById("instructions-button");
     sound.play();
@@ -196,10 +196,10 @@ if (name === "") {
 }
 
 //This alerts the player on the game instructions!
-alert('Instructions:\nPlease Enter the multiple-choice answer in the Box!\nTo Win, You Will Need Atleast $3750 Jeopardy Dollars\n Good Luck');
+alert('Instructions:\nPlease Enter the multiple-choice answer in the Box!\nTo Win, You Will Need Atleast $3750 Jeopardy Dollars, But If You Reach -$1000, You Will Lose The Game\n Good Luck');
 
 $('#instructions').on('click', function () {
-    alert("Instructions:\nPlease Enter the multiple-choice answer in the Box!\nTo Win, You Will Need Atleast $3750 Jeopardy Dollars\n Good Luck!");
+    alert("Instructions:\nPlease Enter the multiple-choice answer in the Box!\nTo Win, You Will Need Atleast $3750 Jeopardy Dollars To Win But If You Reach -$1000, You Will Lose The Game!\n Good Luck!");
 })
 //This targets the $100 row and tracks each click
 //Upon click, the user is alerted a question
