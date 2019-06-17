@@ -192,7 +192,7 @@ if (name === "") {
 } else if (name === null) {
     nameInfo.innerHTML = playerName + " " + "Secret Santa " + "🎅";
 } else {
-    nameInfo.innerHTML = playerName + " " + name + "" + "💰";
+    nameInfo.innerHTML = playerName + " " + name + " " + "💰";
 }
 
 //This alerts the player on the game instructions!
@@ -205,7 +205,7 @@ $('#instructions').on('click', function () {
 //Upon click, the user is alerted a question
 let score = 0
 let scoreItem = document.querySelector('#score-board')
-//Row 1
+//Row 1, Tile targets the button clicked on, A prompt appears based on the tile
 var row1 = $('.square');
 
 row1.on('click', function (evt) {
@@ -245,12 +245,12 @@ row2.on('click', function (evt) {
     alert(prompt);
     var response = window.prompt(question2[tile].prompt);
     if (response.toLowerCase() === question2[tile].answer) {
-        alert('Correct, You are on a Roll')
+        alert('Correct!')
         score += 200;
         let sound = document.getElementById("clap");
         sound.play();
     } else {
-        alert('Wrong')
+        alert('Wrong!')
         score -= 200;
         sound = document.getElementById("wrong");
         sound.play();
