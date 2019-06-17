@@ -347,10 +347,10 @@ row5.on('click', function (evt) {
 })
 //Winning and Losing Conditions
 $('.square, .square1, .square2, .square3, .square4').on('click', function(){
-    if(score > 3750) {
+    if(score > 3500) {
         alert('You Have Won The Game!')
         $('.square, .square1, .square2, .square3, .square4').attr('disabled', 'disabled');
-    } else if (score === 3750) {
+    } else if (score === 3500) {
         alert('You Have Tied The Game')
     }
     else if (score <= -1000) {
