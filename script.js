@@ -138,7 +138,7 @@ var question4 = [
     },
     {
         prompt: "What is the official language of the Canadian province Quebec?\n(a) English\n\(b) French\n(c) Spanish",
-        answer: "c"
+        answer: "b"
     },
     {
         prompt: "What does the acronym USB stand for when referring to a computer port?\n(a) universal series battery\n\(b) universal series bus\n(c) universal serial bus",
@@ -159,8 +159,8 @@ var question5 = [
         answer: "c"
     },
     {
-        prompt: "What is the official language of the Canadian province Quebec?\n(a) English\n\(b) French\n(c) Spanish",
-        answer: "c"
+        prompt: "What was the name of the passenger train service created in 1883 that connected Paris and Constantinople?\n(a) The Orient Express\n\(b) The Polar Express\n(c) The Santa Express",
+        answer: "a"
     },
     {
         prompt: "Regarding data storage, what does the acronym SSD stand for?\n(a) solid safe drive\n\(b) solid steak drive\n(c) solid state drive",
