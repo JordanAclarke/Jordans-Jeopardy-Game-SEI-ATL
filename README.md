@@ -21,9 +21,10 @@ The player is allowed to play the game until he reaches the winning score or com
 
 
 ## Wireframe
-Startup: ![homepage](https://github.com/JordanAclarke/Jordans-Jeopardy-Game-SEI-ATL/blob/master/WireFrame%20Photos/StartUp%20Home%20Page.png)
 
-When a question appears: ![Questionprompt](https://github.com/JordanAclarke/Jordans-Jeopardy-Game-SEI-ATL/blob/master/WireFrame%20Photos/Question%20Pop%20Up.png)
+![homepage](https://github.com/JordanAclarke/Jordans-Jeopardy-Game-SEI-ATL/blob/master/WireFrame%20Photos/StartUp%20Home%20Page.png)
+
+![Questionprompt](https://github.com/JordanAclarke/Jordans-Jeopardy-Game-SEI-ATL/blob/master/WireFrame%20Photos/Question%20Pop%20Up.png)
 
 ## Future Development
 - Add more interactive abilities
